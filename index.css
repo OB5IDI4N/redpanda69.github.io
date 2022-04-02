@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root{
+    font-size: 15px;
+    font-family: 'quicksand', sans-serif;
+    --primaryColor:rgb(253, 45, 45);
+    --secondaryColor:rgb(24, 24, 24);
+    --tertiaryColor:rgb(255, 255, 255);
+
+}
+
+body{
+    margin:0px;
+    padding:0px;
+}
+
+
+/* Home Page */
+div#Home{
+    text-align: center;
+    margin:0px;
+    padding: 0px;
+    height: 100vh;
+    max-width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/forest.jpg");
+    background-size: cover ;
+}
+div#Home h1{
+    font-size: 3rem;
+    font-weight: 1000;
+    color:var(--tertiaryColor);
+}
+div#Home h1 span{
+    color: var(--primaryColor);
+}
+div#Home span.links img{
+    height: 3rem;
+    width: 3rem;
+    transition: transform 350ms ease-in;
+}
+div#Home img:hover{
+    transform: rotate(360deg);
+}
+
+
+
+
+
+/* Skills */
+
+div#Skills{
+    background-color: var(--primaryColor);
+    color: var(--tertiaryColor);
+}
+div#Skills h1{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+div#Skills div.skillContainer{
+    display: flexbox;
+    width: 100vw;
+    text-align: center;
+    
+    padding:1rem;
+    justify-content: center;
+    font-weight: 600;
+}
+div.skillContainer div.totalbar{
+    display: flex;
+    width: 50%;
+    background-color: var(--secondaryColor);
+    height: 5vh;
+    font-size:3vh;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0px;
+    border-radius: 20rem;
+    border: .5vh solid var(--tertiaryColor);
+}
+div.bar{
+    position: relative;
+    transform: translateY(-0.5vh);
+    background-color: var(--tertiaryColor);
+    border-radius: 20rem;
+    color: var(--secondaryColor);
+    height:5vh;
+    border: 0.5vh solid transparent;
+    box-shadow: none;
+    
+}
+
+
+
+
+/* ------AboutMe------  */
+div#AboutMe{
+    display: flex;
+    width:100vw;
+    height: 100vh;
+    background-color: var(--secondaryColor);
+    padding: 4rem;
+    color: white;
+    align-items: center;
+}
+div#AboutMe img{
+    height: 15rem;
+    width: 15rem;
+    border: 1rem solid --tertiaryColor;
+    border-radius: 50%;
+    margin-left: auto;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0,0.7), 0 7px 22px 0 rgba(0, 0, 0, 0.5);
+    transition: box-shadow 500ms ease;
+}
+div#AboutMe img:hover{
+    box-shadow: none;
+}
+div#AboutMe h1{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    font-weight: 900;
+}
+div#AboutMe h2{
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+div#AboutMe p{
+    font-weight: 500;
+    width: 50vw;
+    margin-left: 2rem;
+    font-size: 2rem;
+    color:rgb(153, 153, 153);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For MOB */
+@media only screen and (max-width:426px){
+    :root{
+        font-size: 14px;
+    }
+    
+    div#AboutMe img{
+        display: none;
+    }
+    div#AboutMe p{
+        font-size: 1.5rem;
+    }
+}
