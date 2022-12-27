@@ -1,76 +1,73 @@
 <!DOCTYPE html>
-<html>
-  <head>   
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="description" content="MyPortfolio">
-    <meta name="author" content="RedPanda">
-    <meta name="viewport" content="width=device-width" initial-scale=1> 
-    <title>Portfolio- RedPanda</title>
-    <link rel="stylesheet" href="plugins/fullview.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
-    <link rel="stylesheet" href="index.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  </head>
-  <body>
-    
-    <div id="fullview">
-    <!-- Home -->
-    <div id="Home" class="active" data-tooltip="Home"id="page-one">
-      <span id=Display>
-        <h1>I am <span class="abtme"></span></h1>
-        <span class=links>
-          <a href="https://github.com/redPanda69" target="_blank"><img id=github src="images/github.png"/></a>
-          <a href="https://steamcommunity.com/profiles/76561199213117395/" target="_blank"><img id=steam src="images/steam.png"/></a>
-          <a href="https://www.instagram.com/_creeperguy_/" target="_blank"><img id=instagram src="images/instagram.png"/></a>
-          <a href="https://discord.com/users/850607802962935818" target="_blank"><img id=discord src="images/discord.png"/></a>
-        </span>
-      </span>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>RedPanda</title>
+</head>
+<body>
+    <div id="header">
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Skills</a>
+        <input type="color" id="picker" value="#b00c0f" onchange="changePrimaryColor()">
     </div>
-    
-    <!-- AboutMe -->
-    <div id="AboutMe" data-tooltip="About Me">
-      <div class=box >
-        <h1>WHO AM I?</h1>
-        <h2 >I am <span style= "color: rgb(253, 45, 45);">RedPanda</span></h2>
-        <p ><b></b>Hi I am a Full-StackDev who has expertise in Python and JS with knowledge on web3 ,react.js and flask. Loves to play games and code. I am currently learning solidity.You can contact me via discord and gmail.    
-        </p>
+    <div id="home">
+        <div id="text_container">
+            <h1>I am <span id="abtme"></span></h1>
+            <p>I am a Full-Stack Web3 Developer.</p>
+            <span id="links">
+                <a href="https://github.com/redPanda69" target="_blank"><img id="github" src="images/github.png"></a>
+                <a href="https://steamcommunity.com/profiles/76561199213117395/" target="_blank"><img id="steam" src="images/steam.png"></a>
+                <a href="https://www.instagram.com/_creeperguy_/" target="_blank"><img id="instagram" src="images/instagram.png"></a>
+                <a href="https://discord.com/users/850607802962935818" target="_blank"><img id="discord" src="images/discord.png"></a>
+            </span>
+        </div>
+        <div id="logo_container">
+            <img src="./images/logo.png" alt="profilepic" class="logo" />
+            <img src="./images/logo.png" alt="profilepic" class="logo" />
+            <span id="filter"></span>
+        </div>
+    </div>
+    <div id="aboutMe">
+        <div id="tex_container">
+            <h1>Hi I am <span style="color: var(--primary-color);">RedPanda</span></h1>
+            <p>I am a High School Full-Stack Developer who is into Crypto. I have expertised skills over Python and JS with Knowledge over Flask, React and Web3 (Python and Javascript). I am currently working for a company <a href="https://lightnode.us">LightNode</a>.</p>
+        </div>
+        <img src="./images/pfp.jpg" alt="pfp">
+    </div>
+    <div id="Skills" data-tooltip="Skills">
+        <h1>Skills</h1>
+        <div class=skillContainer>HTML&CSS
+          <div class="totalbar">
+            <div class="bar" id="html" style="width:100%" ></div>
+          </div>
+          <br />Python
+          <div class="totalbar">
+            <div class="bar" id="python"  style="width:95%" ></div>
+          </div>
+          <br />
+            JavaScript
+            <div class="totalbar">
+              <div class="bar" id="javascript"  style="width:90%"></div>
+            </div>
+          <br />PHP
+          <div class="totalbar">
+            <div class="bar" id="php" style="width:50%"></div>
+          </div>
+        <div>Also Specialized in "Web3.js" "React.js" "Flask.py" "Discord.py"...</div>
       </div>
-      <img src="https://i.pinimg.com/originals/6c/03/29/6c032941ae6f35e412bde747eb1242f7.gif"  />
-      
+      </div>
     </div>
 
-    <!--   Skills   -->
-    <div id="Skills" data-tooltip="Skills">
-      <h1>Skills</h1>
-      <div class=skillContainer>HTML&CSS
-        <div class="totalbar">
-          <div class="bar" id="html" style="width:100%" ></div>
-        </div>
-        <br />Python
-        <div class="totalbar">
-          <div class="bar" id="python"  style="width:95%" ></div>
-        </div>
-        <br />
-          JavaScript
-          <div class="totalbar">
-            <div class="bar" id="javascript"  style="width:90%"></div>
-          </div>
-        <br />PHP
-        <div class="totalbar">
-          <div class="bar" id="php" style="width:50%"></div>
-        </div>
-      <div>Also Specialized in "Web3.js" "React.js" "Flask.py" "Discord.py"...</div>
-    </div>
-    </div></div>
-    <!-- Scripts  -->
-      <!--Plugins-->
+
     <script src="plugins/typed.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>  
-      var typed = new Typed('.abtme', {
+      var typed = new Typed('#abtme', {
         strings: ['RedPanda', 'a Crypto Enthusiast','a Gamer','a Student','a FullStack Dev'],
         smartBackspace:false,
         typeSpeed: 40,
@@ -81,54 +78,49 @@
     </script>
     <script  src="https://code.jquery.com/jquery-3.5.1.min.js"  crossorigin="anonymous">  
     </script>
-    
-    <script type="text/javascript" src="plugins/fullview.js"></script>
     <script>
-      $("#fullview").fullView({
-        dots:  true,                 
-        dotsPosition:  'right', 
-        dotsTooltips:  true
-        
-      })
-      
-    </script>
-      <!--VanillaScripts -->
-    <script>
-      function move(el,percent) {
-        var i = 0;
-        if (i == 0) {
-          i = 1;
-          var elem = document.getElementById(el);
-          var width = 1;
-          var id = setInterval(frame, 10);
-          function frame() {
-            if (width >= percent) {
-              clearInterval(id);
-              i = 0;
-            } else {
-              width++;
-              elem.style.width = width + "%";
-              elem.innerHTML = width + "%";
+        function move(el,percent) {
+          var i = 0;
+          if (i == 0) {
+            i = 1;
+            var elem = document.getElementById(el);
+            var width = 1;
+            var id = setInterval(frame, 10);
+            function frame() {
+              if (width >= percent) {
+                clearInterval(id);
+                i = 0;
+              } else {
+                width++;
+                elem.style.width = width + "%";
+                elem.innerHTML = width + "%";
+              }
             }
           }
         }
-      }
-      const el = document.querySelector('#Skills')
-      const observer = new window.IntersectionObserver(([entry]) => {
-        if (entry.isIntersecting) {
-          move("html",100)
-          move("python",95)
-          move("javascript",90)
-          move("php",50)
-          
+        const el = document.querySelector('#Skills')
+        const observer = new window.IntersectionObserver(([entry]) => {
+          if (entry.isIntersecting) {
+            move("html",100)
+            move("python",95)
+            move("javascript",90)
+            move("php",50)
+            
+          }
+        }, {
+          root: null,
+          threshold: 0.5, // set offset 0.1 means trigger if atleast 10% of element in viewport
+        })
+        
+        observer.observe(el);
+      </script>
+      <script>
+        var r = document.querySelector(':root');
+        var elem = document.getElementById("picker")
+        function changePrimaryColor(){
+            console.log(elem.value)
+            r.style.setProperty('--primary-color',elem.value)
         }
-      }, {
-        root: null,
-        threshold: 0.5, // set offset 0.1 means trigger if atleast 10% of element in viewport
-      })
-      
-      observer.observe(el);
-    </script>
-    
-  </body>
+      </script>
+</body>
 </html>
