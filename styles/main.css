@@ -211,3 +211,18 @@ div.bar{
     
 }
 
+@media screen and (max-width:600px) {
+    :root{
+        font-size: 10px;
+    }
+    #header:hover {
+        display: none;
+    }
+    #home #text_container{
+        width: 100vw;
+    }
+    #home #logo_container{
+        display: none;
+    }
+    
+}
