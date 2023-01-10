@@ -1,0 +1,60 @@
+@import url("index.css");
+
+div#Skills{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div#Skills h1{
+    text-align: center;
+    font-size: 3rem;
+}
+div#Skills div.skillContainer{
+    display: flexbox;
+    width: 100vw;
+    text-align: center;
+    padding:1rem;
+    justify-content: center;
+    font-weight: 600;
+}
+div.skillContainer div.totalbar{
+    display: flex;
+    width: 50%;
+    background-color: var(--scndry-color);
+    height: 5vh;
+    font-size:3vh;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+
+    border-radius: 20rem;
+}
+div.bar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--prmry-color);
+    border-radius: 20rem;
+    height:5vh;
+    outline: 0.5vh solid transparent;
+    box-shadow: none;
+    
+}
+
+/* BAckground */
+#bg .bgSkills:nth-child(2){
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--scndry-color);
+}
+#bg .bgSkills:nth-child(1){
+    width: 0vw;
+    height: 100vh;
+    background-color: var(--prmry-color);
+}   

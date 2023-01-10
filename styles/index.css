@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    border: none;
+    margin: 0;
+    padding: 0;
+    transition: all 500ms;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+:root{
+    --prmry-color: #be3b3c;
+    --scndry-color: rgb(22, 22, 22);
+    --tert-color: rgb(255, 255, 255);
+    color: var(--tert-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+/* Background */
+body{
+    background-color: var(--prmry-color);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    overflow-y: overlay;
+}
+::-webkit-scrollbar{
+    width: 0.2rem;
+    margin-right: 0.2rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--tert-color);
+}
+#bg{
+    width: 100vw;
+    height: 100vh;
+    z-index: -100000;
+    display: flex;
+    position: fixed;
+}
+
+#header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    flex-direction: row;
+    width: 100vw;
+    height: 10vh;
+}
+#header #logo {
+    font-size: 3rem;
+    width: 50vw;
+    text-align: center;
+    font-weight: 700;
+
+}
+#header #navs{
+    display: flex;
+    width: 50vw;
+}
+#header #navs .nav{
+    margin: auto;
+    width: 7vw;
+    list-style-type: none;
+    text-align: center;
+    padding: 0.2rem;
+    /* box-shadow: inset 0 0 0 0 var(--tert-color); */
+}
+#header #navs .nav:hover{
+    color: var(--scndry-color);
+    box-shadow: inset 7vw 0 0 0 var(--tert-color);
+}
+
+/* Mobile  */
+@media screen and (max-width:900px) {
+    :root{
+        font-size: 10px;
+    }
+}

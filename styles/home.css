@@ -1,0 +1,64 @@
+@import url("index.css");
+#Home{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#Home div#logo{
+    font-size: 7rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    translate: 5rem;
+}
+#Home div#logo span:nth-child(1){
+    color: var(--scndry-color);
+}
+#Home div#logo span:nth-child(2){
+    color: var(--prmry-color);
+
+}
+
+#Home span#me{
+    translate: 5rem;
+    font-size: 1.5rem;
+}
+
+#Home span#links{
+    margin: 0.5rem;
+    height: 3rem;
+    translate: 5rem;
+    display: flex;
+    width: 25vw ;
+    justify-content: center;
+
+}
+#Home span#links a{
+    /* padding: auto; */
+    margin-left:  auto;
+    margin-right:  auto;
+}
+#Home span#links img{
+    height: 3rem;
+}
+
+#Home span#links img:hover{
+    transform: rotateZ(360deg);
+
+}
+
+/* Background */
+#bg .bgHome:nth-child(1){
+    width: 50vw;
+    height: 100vh;
+    background-color: var(--prmry-color);
+}
+#bg .bgHome:nth-child(2){
+    width: 50vw;
+    height: 100vh;
+    background-color: var(--scndry-color);
+} 
+
+/* Mobile  */ 

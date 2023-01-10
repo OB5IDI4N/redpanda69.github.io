@@ -1,0 +1,46 @@
+@import url("index.css");
+
+#AboutMe{
+    width: 100vw;
+    height: 100vh;
+    margin: none 2rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#AboutMe #file{
+    border: 0.5rem solid var(--scndry-color);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.801), 0 10px 20px 0 rgba(0, 0, 0, 0.425);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#AboutMe #text_container{
+    width: 30vw;
+    margin: 5rem;
+    font-size: xx-large;
+}
+#AboutMe img{
+    border: 1rem solid var(--scndry-color);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    width: 25vw;
+    height: 25vw;
+    margin: 5rem;
+}
+#AboutMe img:hover{
+    box-shadow: none;
+    rotate: 45deg;
+}
+/* Backgrround */
+#bg .bgAbtMe:nth-child(1){
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--prmry-color);
+}
+#bg .bgAbtMe:nth-child(2){
+    width: 0vw;
+    height: 100vh;
+    background-color: var(--scndry-color);
+}   
