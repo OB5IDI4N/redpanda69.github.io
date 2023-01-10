@@ -44,3 +44,16 @@
     height: 100vh;
     background-color: var(--scndry-color);
 }   
+
+/* Mobile */
+@media (max-width:900px){
+    #AboutMe #file{
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+    #AboutMe #text_container{
+        width: 100%;
+        text-align: center;
+    }
+}

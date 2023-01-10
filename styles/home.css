@@ -62,3 +62,19 @@
 } 
 
 /* Mobile  */ 
+@media (max-width:900px){
+    #Home div#logo{
+        font-size: 5rem;
+        translate: 3rem;
+    }
+    #Home *{
+        background-color: rgba(240, 248, 255, 0.103);
+    }
+    #Home span#me{
+        translate: 3rem;
+        font-size: 1.5rem;
+    }
+    #Home span#links{
+        translate: 3rem;
+    }
+}

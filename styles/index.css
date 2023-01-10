@@ -74,7 +74,7 @@ body{
 }
 
 /* Mobile  */
-@media screen and (max-width:900px) {
+@media (max-width:900px) {
     :root{
         font-size: 10px;
     }
