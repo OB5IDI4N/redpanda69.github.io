@@ -3,7 +3,7 @@
 #AboutMe{
     width: 100vw;
     height: 100vh;
-    margin: none 2rem;
+    /* margin: none 2rem; */
     padding: 0;
     display: flex;
     justify-content: center;
@@ -50,6 +50,7 @@
     #AboutMe #file{
         flex-direction: column-reverse;
         align-items: center;
+        width: 75vw;
 
     }
     #AboutMe #text_container{

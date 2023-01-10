@@ -16,7 +16,6 @@ div#Skills div.skillContainer{
     display: flexbox;
     width: 100vw;
     text-align: center;
-    padding:1rem;
     justify-content: center;
     font-weight: 600;
 }
