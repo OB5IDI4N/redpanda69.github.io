@@ -69,9 +69,11 @@ observer3.observe(skills)
 let header = document.getElementById("header")
 window.onscroll = ()=>{
     if (scrollY >= 300){
-        header.style.backgroundColor = "rgb(0,0,0)"
+        header.style.backgroundColor = "var(--scndry-color)"
+        header.style.boxShadow = "0 5px 10px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 0.25)"
     }
     else{
         header.style.backgroundColor = "transparent"
+        header.style.boxShadow = "none"
     }
 }
