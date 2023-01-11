@@ -51,10 +51,11 @@
         flex-direction: column-reverse;
         align-items: center;
         width: 75vw;
-
     }
+    
     #AboutMe #text_container{
         width: 100%;
         text-align: center;
+        font-size: x-large;
     }
 }
