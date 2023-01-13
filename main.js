@@ -77,3 +77,11 @@ window.onscroll = ()=>{
         header.style.boxShadow = "none"
     }
 }
+let isCacheSupported = 'caches' in window;
+
+
+function handleColorClick(elem) {
+  let clr = elem.style.backgroundColor
+  console.log(clr)
+  document.documentElement.style.setProperty("--prmry-color",clr)
+}

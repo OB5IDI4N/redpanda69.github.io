@@ -72,7 +72,29 @@ body{
     color: var(--scndry-color);
     box-shadow: inset 7vw 0 0 0 var(--tert-color);
 }
-
+div#footer{
+    text-align: center;
+    font-size: xx-large;
+    background-color: var(--scndry-color);
+    border-top: 0.1rem solid var(--tert-color);
+    padding: 1rem;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+div#footer span#colors{
+    width:100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+div#footer span#colors .colorPallet{
+    width: 3vw;
+    height: 3vw;    
+    margin: 2rem;
+    border: 0.1rem solid var(--tert-color);
+    border-radius: 50%;
+}
 /* Mobile  */
 @media (max-width:900px) {
     :root{
