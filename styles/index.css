@@ -74,10 +74,10 @@ body{
 }
 div#footer{
     text-align: center;
-    font-size: xx-large;
+    font-size: 1rem;
     background-color: var(--scndry-color);
     border-top: 0.1rem solid var(--tert-color);
-    padding: 1rem;
+    padding-bottom: 1rem;
     list-style-type: none;
     justify-content: center;
     align-items: center;
@@ -89,8 +89,8 @@ div#footer span#colors{
     justify-content: center;
 }
 div#footer span#colors .colorPallet{
-    width: 3vw;
-    height: 3vw;    
+    width: 2rem;
+    height: 2rem;    
     margin: 2rem;
     border: 0.1rem solid var(--tert-color);
     border-radius: 50%;
