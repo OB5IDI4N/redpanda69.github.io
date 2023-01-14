@@ -56,7 +56,7 @@ function onIntersectionSkills(entries) {
         move("html",95)
         move("py",90)
         move("js",80)
-        move("sol",50)
+        move("php",50)
         move("gdscrpt",60)
     }
   }
